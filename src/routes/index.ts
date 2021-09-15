@@ -1,4 +1,4 @@
-import ListsRoutes from './Lists'
+import ListsRoutes from '../lists/listsRouter'
 
 export default class Routes {
   #listsRoutes: ListsRoutes = new ListsRoutes()
