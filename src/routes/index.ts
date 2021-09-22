@@ -1,9 +1,9 @@
-import ListsRoutes from '../lists/listsRouter'
+import ListsRoutes from '../lists/ListsRouter'
 
 export default class Routes {
   #listsRoutes: ListsRoutes = new ListsRoutes()
 
-  constructor(api: any) {
+  constructor(api: Express.Application) {
     this.routerSetup(api)
   }
 
