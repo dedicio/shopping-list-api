@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@App/*": ["src/*"]
+    },
     "lib": ["es6"], 
     "target": "ES2016",
     "module": "commonjs",
