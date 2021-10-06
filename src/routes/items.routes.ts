@@ -14,6 +14,7 @@ class ItemsRoutes extends CommonRoutes {
 
     this.app.route('/items/:id')
       .get(ItemsController.getById)
+      .patch(ItemsController.update)
       .delete(ItemsController.remove)
 
     this.app.route('/items/:name')

@@ -14,6 +14,7 @@ class ListsRoutes extends CommonRoutes {
 
     this.app.route('/lists/:id')
       .get(ListsController.getById)
+      .patch(ListsController.update)
       .delete(ListsController.remove)
 
     return this.app

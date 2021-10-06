@@ -14,6 +14,10 @@ class ItemsController extends CommonController {
     res.status(201).send('create')
   }
 
+  async update(req: Request, res: Response) {
+    res.status(200).send('update')
+  }
+
   async remove(req: Request, res: Response) {
     res.status(200).send('remove')
   }
