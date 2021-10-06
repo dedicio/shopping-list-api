@@ -1,4 +1,4 @@
-export default interface List {
+export default interface IList {
   id: string,
   items: string[]
 }

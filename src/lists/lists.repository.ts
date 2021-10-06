@@ -1,8 +1,8 @@
-import List from './IList'
+import IList from './list.dto'
 
 export default class ListsRepository {
-  get(): Promise<List[]> {
-    const teste: List = {
+  get(): Promise<IList[]> {
+    const teste: IList = {
       id: 'teste',
       items: [
         'idd',
