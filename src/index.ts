@@ -1,13 +1,17 @@
 import cors from 'cors'
 import express, { Application } from 'express'
+import Firebase from './config/db'
 import Routes from './routes'
 
 class Api {
   #app: Application
   #routes: Routes
+  #firebase: Firebase
 
   constructor() {
+    this.#firebase = new Firebase()
     this.#app = express()
+    this.#firebaseConfig()
     this.#config()
     this.#routes = new Routes(this.#app)
   }
@@ -21,6 +25,10 @@ class Api {
     } catch( error: any ) {
       console.error(`A wild error appears: ${error.message}`)
     }
+  }
+
+  #firebaseConfig(): void {
+    this.#firebase.initialize()
   }
 
   #config() {

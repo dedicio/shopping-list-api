@@ -1,5 +1,6 @@
-import { Request, Response } from "express"
-import CommonController from "../common/common.controller"
+import { Request, Response } from 'express'
+import CommonController from '../common/common.controller'
+
 
 class ItemsController extends CommonController {
   async list(req: Request, res: Response) {
